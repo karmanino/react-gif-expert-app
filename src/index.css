@@ -1,0 +1,44 @@
+* {
+    font-family: Verdana;
+}
+
+body {
+    padding: 60px;
+    font-size: large;
+}
+
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.card {
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.card p {
+    padding: 5px;
+    text-align: center;
+    font-size:x-small;
+}
+
+.card img {
+    max-height: 200px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    background-color: greenyellow;
+}
