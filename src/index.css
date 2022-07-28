@@ -1,9 +1,22 @@
 * {
-    font-family: Verdana;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+span {
+    padding-bottom: 10px;
 }
 
 body {
-    padding: 60px;
+    padding: 20px;
     font-size: large;
 }
 
@@ -14,19 +27,28 @@ input {
 }
 
 .card {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     border: 1px solid grey;
-    border-radius: 6px;
+    border-radius: 20px;
     overflow: hidden;
     margin-bottom: 10px;
     margin-right: 10px;
-
 }
 
-.card p {
+.card .title {
+    display: flex;
+    flex-grow: 1;
+    
+    align-items: center;
+}
+
+.card .title p {
+    width: 0;
+    flex-grow: 1;
     padding: 5px;
     text-align: center;
-    font-size:x-small;
 }
 
 .card img {
@@ -37,8 +59,14 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card:hover {
     background-color: greenyellow;
+}
+
+footer {
+    margin-top: 50px;
+    align-self: center;
 }
